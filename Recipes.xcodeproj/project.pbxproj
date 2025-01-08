@@ -6,6 +6,11 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		C6AADC942D2CEB1A00452252 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = C6AADC932D2CEB1400452252 /* README.md */; };
+		C6AADC962D2E83F600452252 /* .gitignore in Resources */ = {isa = PBXBuildFile; fileRef = C6AADC952D2E83F200452252 /* .gitignore */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXContainerItemProxy section */
 		C6300A282D07E4F500CCB8E2 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -27,22 +32,32 @@
 		C6300A172D07E4F300CCB8E2 /* Recipes.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Recipes.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C6300A272D07E4F500CCB8E2 /* RecipesTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RecipesTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		C6300A312D07E4F500CCB8E2 /* RecipesUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RecipesUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		C6AADC932D2CEB1400452252 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		C6AADC952D2E83F200452252 /* .gitignore */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
 /* End PBXFileReference section */
+
+/* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
+		C67381BA2D2CB7C400A3C998 /* Exceptions for "Recipes" folder in "Recipes" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				Info.plist,
+			);
+			target = C6300A162D07E4F300CCB8E2 /* Recipes */;
+		};
+/* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
 		C6300A192D07E4F300CCB8E2 /* Recipes */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+				C67381BA2D2CB7C400A3C998 /* Exceptions for "Recipes" folder in "Recipes" target */,
+			);
 			path = Recipes;
 			sourceTree = "<group>";
 		};
 		C6300A2A2D07E4F500CCB8E2 /* RecipesTests */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
 			path = RecipesTests;
-			sourceTree = "<group>";
-		};
-		C6300A342D07E4F500CCB8E2 /* RecipesUITests */ = {
-			isa = PBXFileSystemSynchronizedRootGroup;
-			path = RecipesUITests;
 			sourceTree = "<group>";
 		};
 /* End PBXFileSystemSynchronizedRootGroup section */
@@ -75,9 +90,10 @@
 		C6300A0E2D07E4F300CCB8E2 = {
 			isa = PBXGroup;
 			children = (
+				C6AADC952D2E83F200452252 /* .gitignore */,
+				C6AADC932D2CEB1400452252 /* README.md */,
 				C6300A192D07E4F300CCB8E2 /* Recipes */,
 				C6300A2A2D07E4F500CCB8E2 /* RecipesTests */,
-				C6300A342D07E4F500CCB8E2 /* RecipesUITests */,
 				C6300A182D07E4F300CCB8E2 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -153,9 +169,6 @@
 			dependencies = (
 				C6300A332D07E4F500CCB8E2 /* PBXTargetDependency */,
 			);
-			fileSystemSynchronizedGroups = (
-				C6300A342D07E4F500CCB8E2 /* RecipesUITests */,
-			);
 			name = RecipesUITests;
 			packageProductDependencies = (
 			);
@@ -212,6 +225,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C6AADC962D2E83F600452252 /* .gitignore in Resources */,
+				C6AADC942D2CEB1A00452252 /* README.md in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -399,6 +414,7 @@
 				DEVELOPMENT_TEAM = HCKE73VPXS;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Recipes/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -428,6 +444,7 @@
 				DEVELOPMENT_TEAM = HCKE73VPXS;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Recipes/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
